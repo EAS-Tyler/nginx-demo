@@ -23,7 +23,7 @@ spec:
           type: RuntimeDefault
       containers:
         - name: nginx
-          image: eastylert/nginx:latest
+          image: eastyler/nginx-demo:latest
           securityContext:
             readOnlyRootFilesystem: true
             runAsNonRoot: true
