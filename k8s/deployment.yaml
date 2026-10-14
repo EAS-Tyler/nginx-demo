@@ -13,7 +13,15 @@ spec:
     metadata:
       labels:
         app: nginx-demo
-    spec:
+      spec:
+        securityContext:
+          runAsNonRoot: true
+          runAsUser: 101
+          runAsGroup: 101
+          fsGroup: 101
+          seccompProfile:
+            type: RuntimeDefault
+
       containers:
         - name: nginx
           image: eastylert/nginx:latest
