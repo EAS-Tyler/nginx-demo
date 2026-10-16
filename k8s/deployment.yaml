@@ -23,7 +23,7 @@ spec:
           type: RuntimeDefault
       containers:
         - name: nginx
-          image: eastyler/harness-cicd:v1
+          image: "{{.Values.image}}"
           securityContext:
             readOnlyRootFilesystem: true
             runAsNonRoot: true
