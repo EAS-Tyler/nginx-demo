@@ -1,1 +1,1 @@
-image: <+artifacts.primary.image>
+image: <+primary.artifact.image>
