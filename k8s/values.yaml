@@ -1,2 +1,2 @@
 image: <+artifacts.primary.image>
-replicas: '{{- if eq "<+env.identifier>" "prod" }}3{{- else if eq "<+env.identifier>" "dev" }}1{{- end }}'
+replicas: {{- if eq "<+env.identifier>" "prod" }}3{{- else if eq "<+env.identifier>" "dev" }}1{{- end }}
